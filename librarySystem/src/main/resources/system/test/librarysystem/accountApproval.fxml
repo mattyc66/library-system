@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Loans.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.test.librarysystem.AccountsController">
+   <children>
+      <TableView fx:id="accountTable" layoutX="69.0" layoutY="50.0" prefHeight="277.0" prefWidth="329.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Username" prefWidth="141.0" text="Username" />
+            <TableColumn fx:id="Account_type" prefWidth="112.0" text="Account Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="approveButton" layoutX="421.0" layoutY="257.0" mnemonicParsing="false" onAction="#approveAction" style="-fx-background-color: #263F73;" text="Approve" textFill="WHITE" />
+      <Button fx:id="denyButton" layoutX="421.0" layoutY="302.0" mnemonicParsing="false" onAction="#denyAction" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #263F73;" text="Deny" textFill="WHITE" />
+      <TextField fx:id="userSearch" layoutX="150.0" layoutY="342.0" prefHeight="25.0" prefWidth="248.0" />
+      <Label layoutX="69.0" layoutY="346.0" text="Search users" />
+   </children>
+</AnchorPane>

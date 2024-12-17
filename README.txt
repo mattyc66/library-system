@@ -1,0 +1,47 @@
+---------------------------------------------------------------------------
+INSTALLING MYSQL WORKBENCH
+---------------------------------------------------------------------------
+- go to this link https://dev.mysql.com/downloads/mysql/ and click the first download
+-run the installer
+-for choosing setup type select custom
+-for select product and feature select mySQL servers and select the server and the green right arrow on  the right
+-click applications then mySQL workbench and then select the workbench and click the green right arrow,  click next
+-now on the installation page click execute
+-on product configuration just click next
+-when on group replication select standalone MySQL server / classic MySQL Replication and then  click next
+-on type and networking make sure config type is Development computer leave everything else as  default. click next
+-on authentication select Use strong Password Encryption for Authentication. click next
+-for account and roles set the password and password. click next
+-on the windows service button just leave everything default and click next
+-for server file permission chose grant full access and click next
+-finally on the Apply configuration click the execute button
+-click next and then click finish and the installation is complete
+---------------------------------------------------------------------------
+ADDING THE TABLES TO THE SQL DATABASE
+---------------------------------------------------------------------------
+-open mySQL workbench
+-open your mySQL connection
+-open the connection, it should prompt you to set a password, set the password as password
+-on the left next to schema select administration
+-click Data import/Restore
+-under  import options, add the file path to the file Dump20230530
+-when the file path is added 'sys' will appear in the white box below, click it
+-to the right there should be a list of 6 tables
+-click start import
+-----------------------------------------------------------------------------
+RUNNING THE JAVA FILES
+-----------------------------------------------------------------------------
+-open intellij. if do not have intellij, install it first, to install intellij, go to intellij website and download intellij community version
+-a window should appear allowing the option to create new project or open one
+-select open project
+-enter in the file path for the librarySystem file and press enter
+-navigate to file and then click project structure
+-in project under project setting click on the SDK field and select download JDK
+-select version 19 and vendor amazon corretto and click download (in theoery any version 19 JDK should work but in testing amazon correttowas used and it worked)
+-make sure the SDK field is using the JDK just downloaded
+-make sure language level is set to SDK default
+-when logging in to application when the program starts get login details from the users table in the mySQL database.
+-------------------------------------------------------------------------------------------
+ADITIONAL INFORMATION
+------------------------------------------------------------------------------------------
+-text files created from the print details file will be sent to the computers downloads file
